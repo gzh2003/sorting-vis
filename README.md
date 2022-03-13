@@ -1,18 +1,25 @@
-## Sorting-Vis
+# Sorting-Vis
+[Sorting-Vis](https://gzh2003.github.io/sorting-vis/) is a visualision tool I built with some classmates as part of our grade 12 computer science class.
 
-This is a visualision tool I built with some classmates for my grade 12 computer science class.
 
-### Features
-This sorting visualiser currently has support for adjustable array sizes, speed, and color themes.
+## Features
 
-It also features the following sorting algorithms:
+### Algorithms
+This sorting visualiser currently supports the following algorithms:
 
-Bubble Sort
+1. Bubble Sort
 
-Selection Sort
+2. Selection Sort
 
-Insertion Sort
+3. Insertion Sort
 
-Merge Sort
+4. Merge Sort
 
-Quick Sort
+5. Quick Sort
+
+### Miscellaneous
+It also features:
+
+1. adjustable array sizes
+2. adjustaable iteration speeds
+3. different color themes
