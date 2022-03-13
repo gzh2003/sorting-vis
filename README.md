@@ -1,10 +1,12 @@
-### Sorting-Visualizer
-The best way to understand algorithms is to see them in action.
+## Sorting-Vis
 
-My first react project, created as part of a group project for my grade 12 computer science class
+This is a visualision tool I built with some classmates for my grade 12 computer science class.
 
-My first react project, may revisit this once I become more adept with ReactJS.
-## Algorithms Implemented:
+### Features
+This sorting visualiser currently has support for adjustable array sizes, speed, and color themes.
+
+It also features the following sorting algorithms:
+
 Bubble Sort
 
 Selection Sort
