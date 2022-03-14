@@ -1,6 +1,7 @@
 # Sorting-Vis
 [Sorting-Vis](https://gzh2003.github.io/sorting-vis/) is a visualision tool I built with some classmates as part of our grade 12 computer science class.
 
+![Demo Image](sorting-vis.gif)
 
 ## Features
 
