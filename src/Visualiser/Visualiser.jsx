@@ -1,5 +1,5 @@
 import React from "react";
-import "./Visualizer.css";
+import "./Visualiser.css";
 
 import { AppBar, Toolbar, Typography, Paper, Grid, CardContent, CardActions, Button, FormControl, Select, MenuItem, Slider, MuiThemeProvider, Switch, createMuiTheme, CssBaseline } from "@material-ui/core";
 
@@ -26,11 +26,11 @@ const secondaryColor = "#f50057";
 let themeMode = "Light";
 let darkMode = false;
 
-export default class Visualizer extends React.Component {
+export default class Visualiser extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            visualizerArray: []
+            visualiserArray: []
         };
     }
 
@@ -78,7 +78,7 @@ export default class Visualizer extends React.Component {
         for (let i = 0; i < numberOfBars; i++) {
             array.push(randomInt(50, 300));
         }
-        this.setState({ visualizerArray: array });
+        this.setState({ visualiserArray: array });
     }
 
     setAlgorithm = (e) => {
@@ -138,7 +138,7 @@ export default class Visualizer extends React.Component {
 
     bubbleSort() {
         this.randomizeArray();
-        const animations = getBubbleSortAnimations(this.state.visualizerArray);
+        const animations = getBubbleSortAnimations(this.state.visualiserArray);
         for (let i = 0; i < animations.length; i++) {
             const isColorChange = (i % 4 === 0) || (i % 4 === 1);
             const arrayBars = document.getElementsByClassName("array-bar");
@@ -165,7 +165,7 @@ export default class Visualizer extends React.Component {
 
     selectionSort() {
         this.randomizeArray();
-        const animations = getSelectionSortAnimations(this.state.visualizerArray);
+        const animations = getSelectionSortAnimations(this.state.visualiserArray);
         for (let i = 0; i < animations.length; i++) {
             const isColorChange = (i % 4 === 0) || (i % 4 === 1);
             const arrayBars = document.getElementsByClassName("array-bar");
@@ -195,7 +195,7 @@ export default class Visualizer extends React.Component {
 
     insertionSort() {
         this.randomizeArray();
-        const animations = getInsertionSortAnimations(this.state.visualizerArray);
+        const animations = getInsertionSortAnimations(this.state.visualiserArray);
         for (let i = 0; i < animations.length; i++) {
             const isColorChange = (i % 4 === 0) || (i % 4 === 1);
             const arrayBars = document.getElementsByClassName("array-bar");
@@ -223,7 +223,7 @@ export default class Visualizer extends React.Component {
 
     mergeSort() {
         this.randomizeArray();
-        const animations = getMergeSortAnimations(this.state.visualizerArray);
+        const animations = getMergeSortAnimations(this.state.visualiserArray);
         for (let i = 0; i < animations.length; i++) {
             const arrayBars = document.getElementsByClassName("array-bar");
             const isColorChange = i % 3 !== 2;
@@ -250,7 +250,7 @@ export default class Visualizer extends React.Component {
 
     quickSort() {
         this.randomizeArray();
-        const animations = getQuickSortAnimations(this.state.visualizerArray);
+        const animations = getQuickSortAnimations(this.state.visualiserArray);
         for (let i = 0; i < animations.length; i++) {
             const isColorChange = (i % 6 === 0) || (i % 6 === 1);
             const arrayBars = document.getElementsByClassName("array-bar");
@@ -315,7 +315,7 @@ export default class Visualizer extends React.Component {
     }
 
     render() {
-        const array = this.state.visualizerArray;
+        const array = this.state.visualiserArray;
         const white = {
             color: "white"
         };
@@ -340,7 +340,7 @@ export default class Visualizer extends React.Component {
                 <MuiThemeProvider theme={darkMode ? darkTheme : lightTheme}>
                     <AppBar style={primaryBackgroundColor} position="static">
                         <Toolbar>
-                            <Typography variant="h6">Sorting Visualizer</Typography>
+                            <Typography variant="h6">Sorting Visualiser</Typography>
                             <div className="theme-section">
                                 <FormControl disabled={isSorting}>
                                     <Typography>Select a Color</Typography>
